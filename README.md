@@ -1,8 +1,8 @@
 # NUnit
 Unit Test in C# with NUnit
 
-## Naming Convention 
-#### [Quy ước đặt tên](./Naming.md)
+## Mô tả
+#### [Quy ước đặt tên](./Description.md)
 
 ## Coding Convention
 #### [Quy ước viết code](./Coding.md)
