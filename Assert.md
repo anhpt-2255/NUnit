@@ -69,3 +69,63 @@ Những ràng buộc có thể chia thành tám loại:
   - Is Exception throws
   - Expected Exception
   - Exception Message Comparison
+  
+## 4. Comparison Constraints
+Equal Constraint Example
+```csharp
+Assert.That(result, Is.EqualTo(5));
+```
+Not Equal Constraint Example
+```csharp
+Assert.That(result, Is.Not.EqualTo(7));
+csharp
+Greater Than Constraint Example
+```csharp
+Assert.That(result, Is.GreaterThan(2));
+Assert.That(result, Is.GreaterThanOrEqualTo(5));
+```
+Less Than Constraint Example
+```csharp
+Assert.That(result, Is.LessThan(9));
+Assert.That(result, Is.LessThanOrEqualTo(5));
+```
+Ranges Example
+```csharp
+Assert.That(result, Is.InRange(5, 10));
+```
+
+## 5. String Constraints
+String Equal / Not Equal Constraint Example
+```csharp
+Assert.That(result, Is.EqualTo("abcdefg"));
+Assert.That(result, Is.Not.EqualTo("mnop"));
+```
+String Equal Ignore Case Example
+```csharp
+Assert.That(result, Is.EqualTo("ABCDEFG").IgnoreCase);
+```
+Substring Constraint Example
+```csharp
+Assert.That(result, Does.Contain("def").IgnoreCase);
+Assert.That(result, Does.Not.Contain("igk").IgnoreCase);
+```
+Empty Example
+```csharp
+Assert.That(result, Is.Empty);
+Assert.That(result, Is.Not.Empty);
+```
+Starts With / Ends With Examples
+```csharp
+Assert.That(result, Does.StartWith("abc"));
+Assert.That(result, Does.Not.StartWith("efg"));
+
+Assert.That(result, Does.EndWith("efg"));
+Assert.That(result, Does.Not.EndWith("mno"));
+```
+Regex Constraint Example
+```csharp
+string result = "abcdefg";  
+
+Assert.That(result, Does.Match("a*g"));
+Assert.That(result, Does.Not.Match("m*n"));
+```
