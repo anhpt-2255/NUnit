@@ -28,3 +28,9 @@ Thuộc tính trong NUnit để xác định lớp kiểm thử (test class), ph
 - SetUpFixture: Được sử dụng ở đầu một lớp, xác định một lớp kiểm thử cơ bản. Trong lớp này sẽ có điều kiện bắt đầu và điều kiện kết thúc cho toàn bộ các lớp TestFixture trong     một không gian tên (namespace). Có thể có hoặc không trong một không gian tên, nhưng chỉ được khai báo một lần duy nhất.
 - TestFixtureSetUp: Được sử dụng ở đầu một phương thức bên trong một lớp TestFixture, xác định đó là một phương thức điều kiện bắt đầu cho từng lớp TestFixture. Có thể có hoặc     không trong một lớp TestFixture, và chỉ được khai báo một lần duy nhất.
 - TestFixtureTearDown: Được sử dụng ở đầu một phương thức bên trong một lớp TestFixture, xác định đó là một phương thức điều kiện kết thúc cho từng lớp TestFixture. Có thể có     hoặc không trong một lớp TestFixture, và chỉ được khai báo một lần duy nhất.
+
+## 5. Cài đặt 
+ Trang chủ: http://www.nunit.org/
+ Download: http://www.nunit.org/index.php?p=download
+ Trong file tải về, có thư mục bin chứa file NUnit.exe dùng để chạy Unit Test từ giao diện.
+ Hoặc bạn có thể cài trực tiếp từ Nuget thông qua Visual Studio: Project => Manage NuGet Packets …
