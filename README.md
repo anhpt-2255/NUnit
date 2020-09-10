@@ -2,7 +2,7 @@
 Unit Test in C# with NUnit
 
 ## Mô tả
-#### [Quy ước đặt tên](./Description.md)
+#### [Mô tả về NUnit](./Description.md)
 
 ## Coding Convention
 #### [Quy ước viết code](./Coding.md)
