@@ -62,6 +62,6 @@ Lưu ý: TestFixture chỉ có thể được dùng cho class, không dùng đư
          Assert.IsTrue((customerType == CustomerType.Basic && minOrder == 0 || customerType == CustomerType.Premium && minOrder > 0));
      }
   }
-     ```
+   ```
 
 
