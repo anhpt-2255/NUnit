@@ -38,12 +38,12 @@ Thuộc tính trong NUnit để xác định lớp kiểm thử (test class), ph
  ## 6. Cách chạy Unit Test NUnit
  Chọn Visual Studio Test Menu > Windows > Test Explorer.
  
-![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/4WiQknl.png)
+![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/Images/Image1.png)
 
 Test Explorer hiển thị các test function trong phần Not Run Tests. Nhấn nút Run All để chạy các test.
 
-![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/LDf9w1P.png)
+![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/Images/Image3.png)
 
 Phía dưới Test Explorer sẽ hiển thị kết quả test. Ở hình dưới đây, nó hiển thị kết quả củaTest1: Test Passed – Test1.
 
-![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/6gk4hHk.png)
+![myimage-alt-tag](https://github.com/anhbpt-2255/NUnit/blob/master/Images/Image2.png)
