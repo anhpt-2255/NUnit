@@ -68,7 +68,7 @@ Attribute TestFixture hỗ trợ kế thừa, tức là khi chúng ta đánh d�
 Pattern này được sử dụng khi chúng ta muốn kiểm tra logic của class cha và đảm bảo rằng các class con không vi phạm việc thực thi class cha.
 Lấy ví dụ, chúng ta có một class cha là Employee, hai class con Manager và DeliveryManager kế thừa từ class này. Chúng ta có một vài sự kiểm tra bên trong class Employee. Đồng thời chúng ta viết các trường hợp test cho class Employee và cần đảm bảo rằng những sự kiểm tra bên trong class Employee phải được xác thực thông qua class con.
  ```csharp
- public abstract class Employee
+ public class Employee
 {
     public string Name { get; set; }
  
