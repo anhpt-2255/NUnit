@@ -87,13 +87,13 @@ Trong ví dụ này, chúng ta thay kiểu trả về của method sang kiểu b
 Chúng ta có thể chỉ rõ người viết trường hợp test trong test method
 ```csharp
 [TestCase(Author = "AnhPT1")]
-public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
+public void TestFixture1()
 {
     ...
 }
  
 [TestCase(Author = "AnhPT2")]
-public void When_AgeGreaterAndEqualTo100_Expects_IsSeniorCitizeAsTrue()
+public void TestFixture2()
 {
     ...
 }
@@ -103,14 +103,14 @@ Bằng cách lựa chọn option này, Test Explorer sẽ phân loại test meth
 ## 4.Property TestName
 Property TestName được dùng khi chúng ta phải dùng tên khác với tên của test method
 ```csharp
-[TestCase(TestName = "EmployeeAgeGreaterAndEqualTo60_Expects_IsSCitizenAsTrue")]
-public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
+[TestCase(TestName = "TestFixture1")]
+public void TestFixture1()
 {
         ...
 }
  
-[TestCase(TestName = "EmployeeAgeGreaterThan100_Expects_IsSCitizenAsTrue")]
-public void When_AgeGreaterThan100_Expects_IsSeniorCitizeAsTrue()
+[TestCase(TestName = "TestFixture2")]
+public void TestFixture2)
 {
     ...
 }
@@ -119,8 +119,8 @@ public void When_AgeGreaterThan100_Expects_IsSeniorCitizeAsTrue()
 ## 5. Ignore TestCase
 Đôi khi chúng ta cần phải bỏ qua trường hợp test có thể do đoạn code chưa hoàn thành. Thế nên chúng ta có thể dùng property Ignore để đánh dấu trường hợp test bị bỏ qua. Test method đó vẫn sẽ được hiển thị trong Test Explorer nhưng Test Runner sẽ không thực thi nó.
 ```csharp
-[TestCase(Ignore = "Code is not complete yet.")]
-public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
+[TestCase(Ignore = "Ignore")]
+public void TestFixture1)
 {
     ....
 }
