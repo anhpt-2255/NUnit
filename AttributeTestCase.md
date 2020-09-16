@@ -83,7 +83,23 @@ Trong ví dụ trên, chúng ta đã cố định kết quả là true, do đó 
         }
 ```
 Trong ví dụ này, chúng ta thay kiểu trả về của method sang kiểu bool, đồng thời thay luôn dòng cuối cùng của test method thành return. Trong những tham số, chúng ta chỉ rõ ExpectedResult với kiểu bool trùng với kiểu trả về của test method.
-
+## 3.Property Author
+Chúng ta có thể chỉ rõ người viết trường hợp test trong test method
+```csharp
+[TestCase(Author = "AnhPT1")]
+public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
+{
+    ...
+}
+ 
+[TestCase(Author = "AnhPT2")]
+public void When_AgeGreaterAndEqualTo100_Expects_IsSeniorCitizeAsTrue()
+{
+    ...
+}
+```
+Khi thực thi test, click chuột phải vào bất cứ test method nào và chọn GroupBy > Traits.
+Bằng cách lựa chọn option này, Test Explorer sẽ phân loại test method theo các property khác nhau của TestCase
 ## 4.Property TestName
 Property TestName được dùng khi chúng ta phải dùng tên khác với tên của test method. Dưới đây là ví dụ:
 ```csharp
