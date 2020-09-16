@@ -3,7 +3,7 @@ NUnit – Attribute TestCase
 ## 1. Test Method
 Khi chúng ta đánh dấu attribute TestCase cho bất cứ method nào thì method đó sẽ được NUnit xem là test method và sau đó các Test Runner có thể thực thi nó.
 ```csharp
-namespace EmployeeService
+namespace NUnit_Application
 {
     public class Student
     {
@@ -24,7 +24,7 @@ namespace EmployeeService
  
 using NUnit.Framework;
  
-namespace EmployeeService.Tests
+namespace NUnit_Application.Test
 {
     [TestFixture]
     public class StudentServiceTest
