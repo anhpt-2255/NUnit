@@ -136,7 +136,7 @@ Chúng ta ghi đè method CreateEmployee và trả về các class con kế th�
 ## 4. Generic TestFixture
 Ngoài các tham số, chúng ta cũng có thể thêm chỉ dẫn những kiểu dữ liệu nào sẽ được truyền vào thông qua attribute TestFixture. Dưới đây là ví dụ:
 ```csharp
- [TestFixture(CustomerType.Premium, 100.00, TypeArgs = new Type[] { typeof(CustomerType), typeof(double) })]
+ [TestFixture(CustomerType.Premium, 100.00)]
 public class CustomerOrderServiceTests<T1, T2>
 {
     private T1 customerType;
