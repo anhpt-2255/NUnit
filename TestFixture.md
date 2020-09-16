@@ -4,7 +4,7 @@ NUnit – TestFixture
 ```csharp
 using NUnit.Framework;
 
-namespace CustomerOrderService.Tests
+namespace NUnit_Application.Test
 {
     [TestFixture]
     public class CustomerOrderServiceTests
@@ -90,7 +90,7 @@ public class DeliveryManager : Employee {}
  ```csharp
  using NUnit.Framework;
  
-namespace EmployeeService.Tests
+namespace NUnit_Application.Test
 {
     [TestFixture]
     public class EmployeeTests
