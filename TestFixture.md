@@ -4,7 +4,7 @@ NUnit – TestFixture
 ```csharp
 using NUnit.Framework;
 
-namespace NUnit_Application.Test
+namespace NUnit_Application
 {
     [TestFixture]
     public class CustomerOrderServiceTests
