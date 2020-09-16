@@ -101,7 +101,7 @@ public void When_AgeGreaterAndEqualTo100_Expects_IsSeniorCitizeAsTrue()
 Khi thực thi test, click chuột phải vào bất cứ test method nào và chọn GroupBy > Traits.
 Bằng cách lựa chọn option này, Test Explorer sẽ phân loại test method theo các property khác nhau của TestCase
 ## 4.Property TestName
-Property TestName được dùng khi chúng ta phải dùng tên khác với tên của test method. Dưới đây là ví dụ:
+Property TestName được dùng khi chúng ta phải dùng tên khác với tên của test method
 ```csharp
 [TestCase(TestName = "EmployeeAgeGreaterAndEqualTo60_Expects_IsSCitizenAsTrue")]
 public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
