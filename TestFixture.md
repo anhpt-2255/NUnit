@@ -137,12 +137,12 @@ Chúng ta ghi đè method CreateEmployee và trả về các class con kế th�
 Ngoài các tham số, chúng ta cũng có thể thêm chỉ dẫn những kiểu dữ liệu nào sẽ được truyền vào thông qua attribute TestFixture. Dưới đây là ví dụ:
 ```csharp
  [TestFixture(CustomerType.Premium, 100.00)]
-public class CustomerOrderServiceTests<T1, T2>
+public class CustomerOrderServiceTestsWithTypeArgs<T1, T2>
 {
     private T1 customerType;
     private T2 minOrder;
  
-    public CustomerOrderServiceTests(T1 customerType, T2 minOrder)
+    public CustomerOrderServiceTestsWithTypeArgs(T1 customerType, T2 minOrder)
     {
         this.customerType = customerType;
         this.minOrder = minOrder;
