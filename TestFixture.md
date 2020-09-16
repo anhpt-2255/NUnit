@@ -18,11 +18,11 @@ Lưu ý: TestFixture chỉ có thể được dùng cho class, không dùng đư
 Đôi khi các class cần các đối số (argument). Chúng ta có thể truyền các đối số vào class thông qua các contructor.
 ```csharp
 [TestFixture(CustomerType.Basic)]
-public class CustomerOrderServiceTests
+public class CustomerOrderServiceTestsWithArgument
 {
     private CustomerType customerType;
 
-    public CustomerOrderServiceTests(CustomerType customerType)
+    public CustomerOrderServiceTestsWithArgument(CustomerType customerType)
     {
         this.customerType = customerType;
     }
@@ -37,18 +37,18 @@ Nếu NUnit framework không tìm thấy constructor nào phù hợp với dạn
   ```csharp
  [TestFixture(CustomerType.Premium, 100.00)]
  [TestFixture(CustomerType.Basic)]
- public class CustomerOrderServiceTests
+ public class CustomerOrderServiceTestsWithArgument
  {
      private CustomerType customerType;
      private double minOrder;
 
-     public CustomerOrderServiceTests(CustomerType customerType, double minOrder)
+     public CustomerOrderServiceTestsWithArgument(CustomerType customerType, double minOrder)
      {
          this.customerType = customerType;
          this.minOrder = minOrder;
      }
 
-     public CustomerOrderServiceTests(CustomerType customerType) : this(customerType, 0)
+     public CustomerOrderServiceTestsWithArgument(CustomerType customerType) : this(customerType, 0)
      {
      }
 
