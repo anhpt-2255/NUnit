@@ -32,10 +32,10 @@ namespace NUnit_Application.Test
         [TestCase]
         public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue()
         {
-            Employee emp = new Employee();
-            emp.Age = 60;
+            Student student = new Student();
+            student.Age = 60;
  
-            bool result = emp.IsSeniorCitizen();
+            bool result = student.IsSeniorCitizen();
  
             Assert.That(result == true);
         }
@@ -54,10 +54,10 @@ trường hợp test khác. Nhưng bằng cách sử dụng các tham số của
 [TestCase(90)]
 public void When_AgeGreaterAndEqualTo60_Expects_IsSeniorCitizeAsTrue(int age)
 {
-    Employee emp = new Employee();
-    emp.Age = age;
+    Student student = new Student();
+    student.Age = age;
  
-    bool result = emp.IsSeniorCitizen();
+    bool result = student.IsSeniorCitizen();
  
     Assert.That(result == true);
 }
