@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\VS2008_Test_Projects\NUnit_Application\NUnit_Application.Test\bin\Debug\NUnit_Application.Test.dll" total="2" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-04-06" time="11:26:17">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.3615" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="D:\VS2008_Test_Projects\NUnit_Application\NUnit_Application.Test\bin\Debug" machine-name="NLAMSAL" user="i80373" user-domain="D2HAWKEYE" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\VS2008_Test_Projects\NUnit_Application\NUnit_Application.Test\bin\Debug\NUnit_Application.Test.dll" executed="True" result="Failure" success="False" time="0.344" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="NUnit_Application" executed="True" result="Failure" success="False" time="0.328" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="0.328" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="TestClass" executed="True" result="Failure" success="False" time="0.328" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="AddTest" executed="True" result="Failure" success="False" time="0.156" asserts="0">
+                    <results>
+                      <test-case name="NUnit_Application.Test.TestClass.AddTest()" executed="True" result="Failure" success="False" time="0.141" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: 40
+  But was:  30
+]]></message>
+                          <stack-trace><![CDATA[at NUnit_Application.Test.TestClass.AddTest() in D:\VS2008_Test_Projects\NUnit_Application\NUnit_Application.Test\TestClass.cs:line 16
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="SubtractTest" executed="True" result="Success" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-case name="NUnit_Application.Test.TestClass.SubtractTest()" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
